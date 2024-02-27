@@ -6,6 +6,7 @@ load: POSTWORLD
 author: DaPigGuy/NemesisFire2348 aka DragonfireHD98
 softdepend: ["PiggyCustomEnchants"]
 website: "https://github.com/DaPigGuy/PiggyCrates/"
+website: "https://discord.gg/66j9cFm6Cc"
 permissions:
   piggycrates:
     default: false
