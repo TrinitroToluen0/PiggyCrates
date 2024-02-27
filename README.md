@@ -5,7 +5,7 @@ vanilla and custom enchants, such as [PiggyCustomEnchants](https://github.com/Da
 
 ## Voraussetzungen
 
-* Grundkenntnisse zur Installation von Plugins von Poggit Releases und/oder Poggit CI
+* Grundkenntnisse zur Installation von Plugins von Poggit Releases und/oder Poggit CI 
 * PMMP 4.9.9 :D
 
 ## Installation und Einrichtung
