@@ -32,14 +32,14 @@ class EventListener implements Listener
                     $player->sendTip($this->plugin->getMessage("crates.error.invalid-crate"));
                 } elseif ($tile->getCrateType()->isValidKey($item)) {
                     $tile->openCrate($player, $item);
-                } elseif ($event->getAction() === PlayerInteractEvent::RIGHT_CLICK_BLOCK) {
+                } elseif ($event->getAction() === K) {
                     $tile->previewCrate($player);
                 }
                 $event->cancel();
                 return;
             }
             if ($tile instanceof Chest) {
-                if (($crate = $this->plugin->getCrateToCreate($player)) !== null) {
+                 (($crate = $this->plugin->getCrateToCreate($player)) !== null) {
                     $newTile = new CrateTile($world, $block->getPosition());
                     $newTile->setCrateType($crate);
                     $tile->close();
