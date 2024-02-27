@@ -1,7 +1,7 @@
 name: PiggyCrates
 main: DaPigGuy\PiggyCrates\PiggyCrates
 version: 4.0.0
-api: 4.9.9
+api: 4.9.9 #bump version 5.0 it works :D
 load: POSTWORLD
 author: DaPigGuy
 softdepend: ["PiggyCustomEnchants"]
