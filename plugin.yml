@@ -3,7 +3,7 @@ main: DaPigGuy\PiggyCrates\PiggyCrates
 version: 4.0.0
 api: 4.9.9 #bump version 5.0 it works :D
 load: POSTWORLD
-author: DaPigGuy
+author: DaPigGuy/NemesisFire2348 aka DragonfireHD98
 softdepend: ["PiggyCustomEnchants"]
 website: "https://github.com/DaPigGuy/PiggyCrates/"
 permissions:
