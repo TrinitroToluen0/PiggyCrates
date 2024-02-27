@@ -23,7 +23,7 @@ commands:
       sender: "{GREEN}You've received the {CRATE} key."
       target: "{GREEN}You've given all online players the {CRATE} key."
 crates:
-  menu-name: "{CRATE} Crate"
+  menu-name: "§f{CRATE} Crate"
   preview:
     item:
       name: "{GREEN}{COUNT}x {RESET}{ITEM}"
