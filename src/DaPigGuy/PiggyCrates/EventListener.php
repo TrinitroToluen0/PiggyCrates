@@ -39,7 +39,7 @@ class EventListener implements Listener
                 return;
             }
             if ($tile instanceof Chest) {
-                 (($crate = $this->plugin->getCrateToCreate($player)) !== null) {
+                 if (($crate = $this->plugin->getCrateToCreate($player)) !== null) {
                     $newTile = new CrateTile($world, $block->getPosition());
                     $newTile->setCrateType($crate);
                     $tile->close();
