@@ -9,8 +9,6 @@ use pocketmine\block\BlockTypeIds;
 use pocketmine\block\tile\Chest;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
-use pocketmine\nbt\tag\CompoundTag;
-use pocketmine\nbt\tag\StringTag;
 
 class EventListener implements Listener
 {
