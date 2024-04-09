@@ -32,7 +32,7 @@ class EventListener implements Listener
                     $player->sendTip($this->plugin->getMessage("crates.error.invalid-crate"));
                 } elseif ($tile->getCrateType()->isValidKey($item)) {
                     $tile->openCrate($player, $item);
-                } elseif ($event->getAction() === K) {
+                } elseif ($event->getAction() === PlayerInteractEvent::RIGHT_CLICK_BLOCK) {
                     $tile->previewCrate($player);
                 }
                 $event->cancel();
