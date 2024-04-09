@@ -1,46 +1,46 @@
-# PiggyCrates [![Poggit-CI](https://poggit.pmmp.io/shield.dl/PiggyCrates)](https://poggit.pmmp.io/p/PiggyCrates) [![Discord](https://img.shields.io/discord/330850307607363585?logo=discord)](https://discord.gg/66j9cFm6Cc)
+# PiggyCrates [![Poggit-CI](https://poggit.pmmp.io/shield.dl/PiggyCrates)](https://poggit.pmmp.io/p/PiggyCrates) [![Discord](https://img.shields.io/discord/330850307607363585?logo=discord)](https://discord.gg/qmnDsSD)
 
 PiggyCrates is a simple and customizable crates plugin, supporting an unlimited amount of crate types. It also supports
 vanilla and custom enchants, such as [PiggyCustomEnchants](https://github.com/DaPigGuy/PiggyCustomEnchants/).
 
-## Voraussetzungen
+## Prerequisites
 
-* Grundkenntnisse zur Installation von Plugins von Poggit Releases und/oder Poggit CI 
-* PMMP 4.9.9 :D
+* Basic knowledge on how to install plugins from Poggit Releases and/or Poggit CI
+* PMMP 4.0.0+
 
-## Installation und Einrichtung
+## Installation & Setup
 
-1. Installieren Sie das Plugin von Poggit.
-2. Starten Sie Ihren Server.
-3. (Optional) Die Datei „config.yml“ enthält einige Optionen, mit denen Sie Ihre wichtigsten Elemente und Kistenmodi anpassen können (Standard).
-   ist Roulette).
-4. Öffnen Sie „crates.yml“.
-5. PiggyCrates unterstützt eine unbegrenzte Anzahl von Kisten. Um eine Kiste zu definieren, fügen Sie einen Schlüssel „crates.yourcratename“ hinzu.
-6. Konfigurieren Sie Ihre Kistentypen. Kistentypen haben verschiedene Eigenschaften:
-    * (Optional) „floating-text“: Schwebender Text, der über dem Crate-Typ angezeigt wird. Lassen Sie das Feld leer, um keinen schwebenden Text zu erhalten.
-    * (Optional) „Befehle“: Befehle, die von CONSOLE ausgeführt werden sollen, wenn der Crate-Typ geöffnet wird. Verwenden Sie „{PLAYER}“ als Platzhalter
-      für Spielernamen.
-    * „Drops“: Mögliche Drops eines Kistentyps. Elemente werden mit den Eigenschaften definiert:
-        * `id`: Artikel-ID
-        * „Meta“: Element-Meta
-        * „Betrag“: Artikelbetrag
-        * (Optional) „Typ“: Artikeltyp
-            * (Standard) „item“: Führt alle Crate-Item-Befehle aus und gibt den Artikel aus
-            * „Befehl“: Führt alle Crate-Item-Befehle aus
-        * (Optional) „Chance“: Artikelgewicht
-        * (Optional) „nbt“: Element NBT als stringifiziertes JSON
-        * (Optional) „Name“: Artikelname
-        * (Optional) „lore“: Item Lore als String mit Zeilenumbrüchen, dargestellt als „\n“.
-        * (Optional) „Verzauberungen“: Gegenstandsverzauberungen, die wie folgt definiert sind:
-          „yaml
-          Verzauberungen:
-           -name: „Schutz“
-             Level 1
-           -Name: „Dornen“
-             Level 1
-          „
-        * (Optional) „Befehle“: Befehle, die von CONSOLE ausgeführt werden sollen, wenn das Element von der Kiste abgelegt wird.
-    * „Betrag“: Anzahl der Tropfen, die ein einzelner Kistentyp gibt.
+1. Install the plugin from Poggit.
+2. Start your server.
+3. (Optional) The `config.yml` file has a few options that allow you to customize your key items & crate modes (default
+   is roulette).
+4. Open the `crates.yml`.
+5. PiggyCrates supports an unlimited number of crates. To define a crate, add a key `crates.yourcratename`.
+6. Configure your crate types. Crate types have several different properties:
+    * (Optional) `floating-text`: Floating text that will appear above the crate type. Leave empty for no floating text.
+    * (Optional) `commands`: Commands to be run by CONSOLE when crate type is opened. Use `{PLAYER}` as a placeholder
+      for player name.
+    * `drops`: Possible drops of a crate type. Items are defined with the properties:
+        * `id`: Item ID
+        * `meta`: Item Meta
+        * `amount`: Item Amount
+        * (Optional) `type`: Item Type
+            * (Default) `item`: Runs all crate item commands & gives the item
+            * `command`: Runs all crate item commands
+        * (Optional) `chance`: Item Weight
+        * (Optional) `nbt`: Item NBT as stringified JSON
+        * (Optional) `name`: Item Name
+        * (Optional) `lore`: Item Lore as string with line breaks represented as `\n`
+        * (Optional) `enchantments`: Item enchantments defined like so:
+          ```yaml
+          enchantments:
+           - name: "Protection"
+             level: 1
+           - name: "Thorns"
+             level: 1
+          ```
+        * (Optional) `commands`: Commands to be run by CONSOLE if item is dropped by crate.
+    * `amount`: Amount of drops a single crate type will give.
 
    **Example**:
    ```yaml
