@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace DaPigGuy\PiggyCrates\crates;
 
 use DaPigGuy\PiggyCrates\PiggyCrates;
+use pocketmine\item\enchantment\EnchantmentInstance;
+use pocketmine\item\enchantment\VanillaEnchantments;
 use pocketmine\item\Item;
 use pocketmine\item\StringToItemParser;
 use pocketmine\nbt\tag\StringTag;
@@ -77,6 +79,7 @@ class Crate
         $key->setCustomName(ucfirst(str_replace("{CRATE}", $this->getName(), $this->plugin->getConfig()->getNested("keys.customName"))));
         $key->setLore([str_replace("{CRATE}", $this->getName(), $this->plugin->getConfig()->getNested("keys.lore"))]);
         $key->getNamedTag()->setString("KeyType", $this->getName());
+        $key->addEnchantment(new EnchantmentInstance(VanillaEnchantments::UNBREAKING(), 1));
         $player->getInventory()->addItem($key);
     }
 
