@@ -16,6 +16,10 @@ class EventListener implements Listener
     {
     }
 
+    /**
+     * @priority HIGH
+     * @handleCancelled true
+     */
     public function onInteract(PlayerInteractEvent $event): void
     {
         $player = $event->getPlayer();
